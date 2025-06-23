@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+
+header .panel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 236, 236);
+    padding-bottom: 20px ;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+header {
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header .Logo{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: cyan;
+}
+header .tu-venta {
+    background-color: rgb(116, 113, 113);
+    padding: 5px 8px ;
+    border-radius: 5px;
+}
+header .online {
+    color: rgb(116, 113, 113) ;
+    padding: 5px ;
+    padding-left: 0;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header a:hover {
+    background-color: rgb(116, 113, 113);
+    color: cyan;
+
+
+}
+header a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+#promo {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+#promo h2 {
+    font-size: 2.5rem;
+}
+#promo p {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+#promo a {
+    text-decoration: none;
+    background-color: cyan;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#listado ul {
+    list-style: none;
+    text-decoration: none;
+}
+#listado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#listado img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+#listado .cont {
+    align-items: center;
+}
+#listado .carta {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 7px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#listado span {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+#listado p {
+    font-size: 1.1rem;
+    margin: 5px;
+}
+#listado .add {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.add a {
+    text-decoration: none;
+    background-color: cyan;
+    font-size: 1.0rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.add a:hover {
+    background-color: rgb(116, 113, 113);
+    color: cyan;
+}
+#listado ul {
+    text-decoration: none;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(229, 236, 236) ;
+}
+footer nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+    margin: 5px 0;
+}
+#listado .cont {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    header .panel{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-bottom: 0;
+        padding-right: 0;
+        justify-content: space-between;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header .Logo {
+        padding-right: 100px;
+    }
+    header a {
+       padding-left: 10px;
+       padding-right: 10px; 
+       display: flex;
+       align-items: center; 
+       margin: 0;
+       border-radius: 0;
+       height: 90%;
+    }
+    header a:hover {
+        background-color: rgb(92, 90, 90);
+        color: cyan;
+    }
+    #listado .cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

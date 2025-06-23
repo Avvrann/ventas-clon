@@ -1,0 +1,99 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../static/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cont {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+/* Estilo para el título */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333333; /* Color del texto */
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+
+
+
+/* Estilo para los campos del formulario */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form button {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+#id_username,
+#id_password {
+    width: 94%;
+}
+
+.cont a {
+    color: black;
+}
+
+/* Estilo para el botón */
+form button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo para el enlace */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Cambia el color al pasar el cursor */
+}

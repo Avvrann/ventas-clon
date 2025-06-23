@@ -1,0 +1,75 @@
+/* Estilo general para el cuerpo */
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../static/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Altura mínima de la ventana */
+}
+
+/* Estilo para el encabezado */
+header {
+    width: 100%;
+    color: white; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Contenedor principal */
+main {
+    width: 90%;
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto;
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Oculta contenido que sobresale */
+}
+
+/* Estilo para el mapa */
+#map {
+    margin-top: 50px;
+    height: 700px; /* Altura del mapa */
+    width: auto; /* Ancho completo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px;
+
+}
+
+/* Estilo para el pie de página */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 0.9rem;
+    margin-top: auto; /* Empuja el footer al final */
+}
+
+footer a {
+    color: #ffdd57; /* Amarillo claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

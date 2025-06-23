@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta Online</title>
+        {% load static %} 
+        <link rel="stylesheet" href="{% static 'lista_prodcutos.css' %}">
+    </head>
+    <body>
+        <header>
+            <section class="panel">
+                <h1 class="Logo"><span class="tu-venta">Tu Venta</span> <span class="online">Online!</span></h1>
+                <nav>
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'register' %}">Register</a>
+                </nav>
+            </section>
+        </header>
+        <section id="promo">
+            <h2>Hechale un vistaso a nuestras ofertas</h2>
+            <div class="cont">
+                <p>No dudes en buscar entre las ofertas de la comunidad</p>
+                <a href="#">Ir a ofertas</a>
+            </div>
+        </section>
+        <section id="listado">
+            <ul>
+                <div class="cont">
+                    {% for producto in productos %}
+                    <div class="contenedor_interior">
+                        <li class="cont_list">
+                           <div class="carta">
+                                <img src="{{ producto.image.url}}" alt="image">
+                                <p><span>Nombre del Articulo : </span>{{ producto.name }}</p>
+                                <p><span>Descripcion : </span>{{ producto.description }}</p>
+                                <p><span>$</span>{{ producto.price }}</p>
+                                <p><span>Stock : </span>{{ producto.stock }}</p>   
+                                <div class="add">
+                                    <a href="#">Agregar al Carrito</a>        
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    {% empty %}
+                    <p>
+                        no hay productos disponibles aun
+                    </p>
+                    {% endfor %}    
+                </div>               
+            </ul>
+        </section>
+        <footer>
+            <div class="conteiner">
+                <p>&copy; 2023 Venta Online. Todos los derechos reservados.</p>
+                <nav>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

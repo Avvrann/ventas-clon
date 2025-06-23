@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta Online</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'index.css' %}">
+    </head>
+    <body>
+        <header>
+            <section class="panel">
+                <h1 class="Logo"><span class="tu-venta">Tu Venta</span> <span class="online">Online!</span></h1>
+                <nav>
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'register' %}">Register</a>
+                </nav>
+            </section>
+        </header>
+        <section id="unete">
+            <div class="conteiner">
+                <h2>Unete a nuestra comunidad</h2>
+                <p>Conviértete en parte de nuestra comunidad de ventas online y lleva tu negocio al siguiente nivel.</p>
+                <a href="#" class="btn">Unete Ahora</a>
+            </div>
+        </section>
+       
+    
+        <section id="categorias">
+            <div class="cont">
+                <h1>Explora nuestras diferentes categorias de productos</h1>
+                <div class="cartas">
+                    <div class="carta">
+                        <h3>Ropa</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Teconologia</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Hogar</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Juguetes</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Herramientas</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Vehiculos</h3>
+                        <a href="#">Ver Categoria</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="somos">
+            <div class="cont">
+                <div class="txt">
+                    <h3>Explora nuestras sucursales cerca de tu localidad</h3>
+                    <p>No dudes en visitar nuestras tiendas en tu ciudad recibe un 5% de descuento en tu primera compra!</p>
+                    <a href="{% url 'ubicacion' %}">Ir a Ubicacion</a>
+                </div>
+            </div>
+
+        </section>
+       
+            
+      
+        <section id="menu">
+            <div class="conteiner">
+                <h2>Extiende tu Negocio</h2>
+                <div class="cartas">
+                    <div class="carta">
+                        <h3>Lista de Productos</h3>
+                        <p>Mira la lista de productos actuales que tenemos en la pagina !!Compra </p>
+                        <a href="{% url 'lista_productos'%}">Lista de Productos</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Agrega nuevos productos</h3>
+                        <p>Muestrale al mundo lo que tienes que ofrecer promocionate con nosotros</p>
+                        <a href="{% url 'add_product_form' %}">Muestranos tus Productos</a>
+                    </div>
+                    <div class="carta">
+                        <h3>Nuestras Ofertas</h3>
+                        <p>Revisa las ofertas que tenemos para ti, no te las pierdas, son por tiempo limitado</p>
+                        <a href="#">Revisa las Ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="conteiner">
+                <p>&copy; 2023 Venta Online. Todos los derechos reservados.</p>
+                <nav>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+       
+    </body>
+</html>

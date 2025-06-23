@@ -1,0 +1,93 @@
+body {
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../static/fondo.jpg');
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+}
+.cont {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 800px;
+
+}
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: white;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+    appearance: none;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-style: hidden;
+    border-radius: 4px;
+    background-color: #c3bfbf3f;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+
+/* Estilo para el botón */
+form button {
+    display: block;
+    width: 100%; /* Botón ancho completo */
+    padding: 10px;
+    background-color: cyan; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+form p {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+form input {
+    border: 5px;
+    border-style: solid;
+    border-color: cyan;
+}
+footer {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(229, 236, 236) ;
+}
+footer nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+    margin: 5px 0;
+}

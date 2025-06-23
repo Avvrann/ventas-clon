@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detalles de productos</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Lista de Productos</h1>
+        </header>
+        <ul>
+            <li>
+                {{product.description}}
+            </li>
+        </ul>
+    </body>
+</html>

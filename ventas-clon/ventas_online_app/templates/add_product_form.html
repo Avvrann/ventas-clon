@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta Online</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'forms.css' %}">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <main>
+            <div class="txt">
+                <h2>
+                    Promociona tus productos con nosotros
+                </h2>
+            </div>
+            <div class="cont">
+                <form method="post" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" para cargar imagenes a partir del formulario -->
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn">Guardar</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="conteiner">
+                <p>&copy; 2023 Venta Online. Todos los derechos reservados.</p>
+                <nav>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+       </div>
+    </body>
+</html>

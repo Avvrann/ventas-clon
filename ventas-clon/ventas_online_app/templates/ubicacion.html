@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="{% static 'ubicacion.css' %}">
+    
+    <style>
+        #map {
+            height: 600px;
+            width: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ubicación de Nuestra Sede</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+    </main>
+    <script>
+        // Coordenadas fijas pasadas desde el backend
+        const mapLatitude = {{ latitude }};
+        const mapLongitude = {{ longitude }};
+
+        // Inicializar el mapa
+        const map = L.map('map').setView([mapLatitude, mapLongitude], 13);
+
+        // Cargar el mapa base
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Agregar un marcador en la ubicación fija
+        L.marker([mapLatitude, mapLongitude]).addTo(map)
+            .bindPopup('Ubicación fija: Nueva York')
+            .openPopup();
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+header {
+    background-color: rgb(206, 118, 18);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+    color: dark;
+}
+div{
+    background-color: lightgray;
+    border-radius: 5%;
+    padding: 10px;
+    display: flex;
+}
+aside {
+    background-color: rgb(165, 63, 134);
+}
+main {
+    background-color: yellow;
+    flex-grow: 1;
+}
+.links {
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.container_lista_productos {
+    background-color: linear-gradient(to right, #292e32, #424a53);
+    border-radius: 20px;
+    text-align: center;
+
+}
+.p_list {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
